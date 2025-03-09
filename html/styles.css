@@ -1,0 +1,155 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Flexbox för att centrera innehållet på sidan */
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #4d2d55; 
+  }
+
+
+/* Bas stil för header */
+header{
+    background-color: #7a4a8c;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    position: relative; 
+    top: 0; 
+}
+
+/* Stil för titel i header */
+.header h1 {
+    display: inline-block; 
+    background-color: #5f3a6b; 
+    color: white;
+    padding: 15px 30px; 
+    border-radius: 15px; 
+    font-size: 2.5rem; 
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    margin: 0; 
+}
+
+
+/* Container för hela blogginnehållet */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: whitesmoke; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+  }
+
+
+/* Stil för formuläret */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+
+/* Textarea för att skriva innehåll */
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; 
+    min-height: 150px; 
+  }
+
+
+/* Input för titel */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+
+/* Publiceringsknapp */
+button {
+    padding: 10px 20px;
+    background-color: #4585a0;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+/* Hover effekt */
+button:hover {
+    background-color: #4caf7c;
+  }
+
+
+/* Media Query för mobiler */
+@media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+
+/* Stil för blogginlägg */
+.blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px; 
+    background-color: #f9f9f9; 
+    transition: background-color 0.3s ease;
+  }
+  
+/* Hover-effekt när muspekaren är över inlägget */
+.blog-post:hover {
+    background-color: #bcbcbc; 
+  }
+  
+/* Stil för titel på inlägget */
+.blog-post h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+/* Stil för författare och datum */
+.blog-post .author-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+/* Stil för själva innehållet i blogginlägget */
+.blog-post p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
